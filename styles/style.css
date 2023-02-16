@@ -155,4 +155,21 @@ div {
 h1{
   margin: 20px;
 }
- 
+ .clip{
+  clip-path: circle(40% at 50% 50%);
+ }
+ span {
+  content: "\2709";
+  height: 5px ;
+}
+.fa {  
+  padding: 20px;  
+text-align: center;  
+  margin: 5px 2px;  
+  font-size: 30px;  
+  width: 50px;  
+}  
+.fa-facebook {  
+  background: #3B5998;  
+  color: white;  
+}  
