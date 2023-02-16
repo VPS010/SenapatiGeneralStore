@@ -29,7 +29,7 @@ nav ul {
 }
 ul {
   display: block;
-  list-style:none;
+  list-style: none;
   margin-block-start: 0px;
   margin-block-end: 0px;
   margin-inline-start: 0px;
@@ -43,19 +43,19 @@ nav ul li a {
   display: block;
   padding: 15px;
   text-decoration: none;
-  color:#ffffff;
+  color: #ffffff;
   font-weight: 800;
 }
 nav ul li a,
 nav ul li a:after,
 nav ul li a:before {
-  transition: all .3s;
+  transition: all 0.3s;
 }
 nav ul li a:hover {
   color: #ffffff;
 }
 nav.shift ul li a {
-  position:relative;
+  position: relative;
   z-index: 1;
 }
 nav.shift ul li a:hover {
@@ -71,9 +71,9 @@ nav.shift ul li a:after {
   margin: auto;
   width: 100%;
   height: 1px;
-  content: '.';
+  content: ".";
   color: transparent;
-  background:#02bfd4;
+  background: #02bfd4;
   visibility: none;
   opacity: 0;
   z-index: -1;
@@ -128,7 +128,6 @@ footer a {
   text-align: center;
   float: left;
   color: white;
-
 }
 
 .typed-out {
@@ -152,45 +151,49 @@ footer a {
 div {
   color: rgb(201, 8, 8);
 }
-h1{
+h1 {
   margin: 20px;
 }
- .clip{
+.clip {
   clip-path: circle(40% at 50% 50%);
- }
- span {
-  content: "\2709";
-  height: 5px ;
 }
-.fa {  
-  padding: 20px;  
-text-align: center;  
-  margin: 5px 2px;  
-  font-size: 30px;  
-  width: 50px;  
-}  
-.fa-facebook {  
-  background: #3B5998;  
-  color: white;  
-}  
-*,*:before,*:after {
-	box-sizing: border-box;
+span {
+  content: "\2709";
+  height: 5px;
+}
+.fa {
+  padding: 20px;
+  text-align: center;
+  margin: 5px 2px;
+  font-size: 30px;
+  width: 55px;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
 }
 
 :after {
-	content: "";
+  content: "";
 }
 
 navs {
   float: left;
-	position: fixed;
-	top: 345px;
+  position: fixed;
+  top: 345px;
   left: 0;
-	background: transparent;
+  background: transparent;
 }
 
 navs ul {
-	text-align: center;
+  text-align: center;
 }
 ul {
   display: block;
@@ -202,268 +205,293 @@ ul {
   padding-inline-start: 0px;
 }
 navs ul li {
-	position: relative;
+  position: relative;
   width: 70px;
   cursor: pointer;
-	background: #013d60;
-	text-transform: uppercase;
-	transition:all .4s ease-out;
+  background: #013d60;
+  text-transform: uppercase;
+  transition: all 0.4s ease-out;
 }
 
 navs ul li:after {
-	position: absolute;
-	background: white;
+  position: absolute;
+  background: white;
   background-color: #008e9d;
-	color:  #032d45;
-	top:0;
-	left: 70px;
-	width: 70px; height: 100%;
-  opacity:.5;
+  color: #032d45;
+  top: 0;
+  left: 70px;
+  width: 70px;
+  height: 100%;
+  opacity: 0.5;
   transform: perspective(400px) rotateY(90deg);
-	transform-origin: 0 100%;
-	transition:all .4s ease-out;
+  transform-origin: 0 100%;
+  transition: all 0.4s ease-out;
 }
 
-navs ul li:nth-child(1):after { 
-	content: "Home";
-	line-height: 88px;
+navs ul li:nth-child(1):after {
+  content: "Home";
+  line-height: 88px;
 }
-navs ul li:nth-child(2):after { 
-	content: "About";
-	line-height: 88px;
+navs ul li:nth-child(2):after {
+  content: "About";
+  line-height: 88px;
 }
-navs ul li:nth-child(3):after { 
-	content: "Work";
-	line-height: 85px;
+navs ul li:nth-child(3):after {
+  content: "Work";
+  line-height: 85px;
 }
-navs ul li:nth-child(4):after { 
-	content: "Say hi";
-	line-height: 70px;
+navs ul li:nth-child(4):after {
+  content: "Say hi";
+  line-height: 70px;
 }
 
 navs ul li:hover {
-	transform: translateX(-70px);
+  transform: translateX(-70px);
 }
 
 navs ul li:hover:after {
   opacity: 1;
-	transform: perspective(400px) rotateY(0deg) scale(1) ;
+  transform: perspective(400px) rotateY(0deg) scale(1);
 }
-
 
 navs ul li > div {
-	display: inline-block;
-	padding: 25px 0;
-	background: transparent;
+  display: inline-block;
+  padding: 25px 0;
+  background: transparent;
 }
 
-navs ul li div { position: relative; }
+navs ul li div {
+  position: relative;
+}
 
 .roof {
-	width: 0;
-	height: 0;
-	top:2px;
-	border-style: solid;
-	border-width: 0 21px 15px 21px;
-	border-color: transparent transparent #ffffff transparent;
+  width: 0;
+  height: 0;
+  top: 2px;
+  border-style: solid;
+  border-width: 0 21px 15px 21px;
+  border-color: transparent transparent #ffffff transparent;
 }
 
 .roof-edge {
-	position: absolute;
-	z-index: 20;
-	left: -17px;
-	top: 3px;
-	width: 0;
-	height: 0;
-	border-style: solid;
-	border-width: 0 17px 12px 17px;
-	border-color: transparent transparent  #013d60 transparent;
+  position: absolute;
+  z-index: 20;
+  left: -17px;
+  top: 3px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 17px 12px 17px;
+  border-color: transparent transparent #013d60 transparent;
 }
 /*white triangle over red triangle*/
 .roof-edge:after {
-	position: absolute;
-	left: -14.5px;
-	top: 3px;
-	width: 0;
-	height: 0;
-	border-style: solid;
-	border-width: 0 14.5px 10px 14.5px;
-	border-color: transparent transparent white transparent;
+  position: absolute;
+  left: -14.5px;
+  top: 3px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 14.5px 10px 14.5px;
+  border-color: transparent transparent white transparent;
 }
 
 .front {
-	position: relative;
-	top: 3px;
-	width: 28.5px;
-	height: 20px;
-	margin: 0 auto;
-	background: white;
+  position: relative;
+  top: 3px;
+  width: 28.5px;
+  height: 20px;
+  margin: 0 auto;
+  background: white;
 }
 /*door*/
 .front:after {
-	position: absolute;
-	background:  #013d60;
-	width: 11px;
-	height: 13px;
-	bottom: 0;
-	left:9px;
+  position: absolute;
+  background: #013d60;
+  width: 11px;
+  height: 13px;
+  bottom: 0;
+  left: 9px;
 }
 
 /*/// About me ////*/
 
 .head {
-	width: 32px;
-	height: 35px;
-	background: white;
-	border-radius:8px;
+  width: 32px;
+  height: 35px;
+  background: white;
+  border-radius: 8px;
 }
 /*mouth*/
 .head:after {
-	width: 4px;
-	height: 10px;
-	background: white;
-	position: absolute;
-	border-radius:4px 0 0 4px;
-	top:21px;
-	left: 14px;
-	transform:rotate(270deg);
+  width: 4px;
+  height: 10px;
+  background: white;
+  position: absolute;
+  border-radius: 4px 0 0 4px;
+  top: 21px;
+  left: 14px;
+  transform: rotate(270deg);
 }
 
 .eyes {
-	width: 8px;
-	height: 5px;
-	border-radius: 50%;
-	position: absolute;
-	top: 10px;
-	left: 5px;
-	background:  #013d60;
+  width: 8px;
+  height: 5px;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  left: 5px;
+  background: #013d60;
 }
 /*right eye*/
 .eyes:after {
-	width: 8px;
-	height: 5px;
-	border-radius: 50%;
-	position: absolute;
-	top: 0;
-	left: 14px;
-	background:  #013d60;
+  width: 8px;
+  height: 5px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 14px;
+  background: #013d60;
 }
 
 .beard {
-	width: 32px;
-	height: 17px;
-	background:  #013d60;
-	border:2px solid white;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	border-radius:0 0 8px 8px;
+  width: 32px;
+  height: 17px;
+  background: #013d60;
+  border: 2px solid white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 0 0 8px 8px;
 }
 /*nose*/
 .beard:after {
-	position: absolute;
-	top:-2px;
-	left: 11px;
-	background: white;
-	width:6px;
-	height: 4px;
-	border-left:1px solid  #013d60;
-	border-right:1px solid  #013d60;
+  position: absolute;
+  top: -2px;
+  left: 11px;
+  background: white;
+  width: 6px;
+  height: 4px;
+  border-left: 1px solid #013d60;
+  border-right: 1px solid #013d60;
 }
 
 /*//work//*/
 
 .paper {
-	position: relative;
-	height:32px;
-	width: 29px;
-	background: white;
-	border:2px solid white;
+  position: relative;
+  height: 32px;
+  width: 29px;
+  background: white;
+  border: 2px solid white;
 }
 
 /*window*/
 .paper:after {
-	position: absolute;
-	top:1px;
-	left: 0;
-	width: 25px;
-	height: 29px;
-	background: white;
-	border-top:4px solid  #013d60;
+  position: absolute;
+  top: 1px;
+  left: 0;
+  width: 25px;
+  height: 29px;
+  background: white;
+  border-top: 4px solid #013d60;
 }
 
 .lines {
-	position: absolute;
-	top: 36px;
-	left: 5px;
-	width: 11px;
-	box-shadow: 0 0 0 1px  #013d60;
+  position: absolute;
+  top: 36px;
+  left: 5px;
+  width: 11px;
+  box-shadow: 0 0 0 1px #013d60;
 }
 
 .lines:after {
-	position: absolute;
-	top: 4px;
-	left: 3px;
-	width: 14px;
-	box-shadow: 0 0 0 1px  #013d60;
+  position: absolute;
+  top: 4px;
+  left: 3px;
+  width: 14px;
+  box-shadow: 0 0 0 1px #013d60;
 }
 
 .lines:nth-child(2) {
-	position: absolute;
-	top: 44px;
-	left: 8px;
-	width: 11px;
+  position: absolute;
+  top: 44px;
+  left: 8px;
+  width: 11px;
 }
 
 .lines:nth-child(2):after {
-	position: absolute;
-	top: 4px;
-	left: 0px;
-	width: 11px;
+  position: absolute;
+  top: 4px;
+  left: 0px;
+  width: 11px;
 }
 
 .lines:nth-child(3) {
-	position: absolute;
-	top: 52px;
-	left: 8px;
-	width: 14px;
+  position: absolute;
+  top: 52px;
+  left: 8px;
+  width: 14px;
 }
 
 .lines:nth-child(3):after {
-	display: none;
+  display: none;
 }
 
 /*//mail //*/
 
 .mail-base {
-	position: relative;
-	width: 32px;
-	height: 18px;
-	background: white;
+  position: relative;
+  width: 32px;
+  height: 18px;
+  background: white;
 }
 
 .mail-top {
-	position: absolute;
-	z-index: 20;
-	left: 0;
-	top: 0;
-	width: 0;
-	height: 0;
-	transform: rotate(180deg);
-	border-style: solid;
-	border-width: 0 16px 11px 16px;
-	border-color: transparent transparent  #013d60 transparent;
+  position: absolute;
+  z-index: 20;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  transform: rotate(180deg);
+  border-style: solid;
+  border-width: 0 16px 11px 16px;
+  border-color: transparent transparent #013d60 transparent;
 }
 
 .mail-top:after {
-	position: absolute;
-	z-index: 20;
-	left: -16px;
-	top: 3px;
-	width: 0;
-	height: 0;
-	border-style: solid;
-	border-width: 0 16px 9px 16px;
-	border-color: transparent transparent white transparent;
+  position: absolute;
+  z-index: 20;
+  left: -16px;
+  top: 3px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 16px 9px 16px;
+  border-color: transparent transparent white transparent;
 }
-
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.fa:hover {
+  opacity: 0.8;
+}
