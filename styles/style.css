@@ -11,18 +11,21 @@ body {
 header h1 {
   text-align: center;
   font-size: 50px;
-  color: white;
+  color: white ;
 }
 
 header {
   padding: 0.5px;
-  background-color: #008e9d;
+  background-color: #008e9d ;
 }
-
 nav {
-  background: #063956;
-  font-family: sans-serif;
+    background: #115c91;
+  font-family: 'Lato', sans-serif;
+  font-size: large;
 }
+nav ul li {
+  display: inline-block;
+}                                     
 nav ul {
   list-style: none;
   text-align: left;
@@ -36,9 +39,7 @@ ul {
   margin-inline-end: 0px;
   padding-inline-start: 40px;
 }
-nav ul li {
-  display: inline-block;
-}
+
 nav ul li a {
   display: block;
   padding: 15px;
@@ -59,7 +60,8 @@ nav.shift ul li a {
   z-index: 1;
 }
 nav.shift ul li a:hover {
-  color: #063956;
+  color: #ff003c;
+ font-weight: bold
 }
 nav.shift ul li a:after {
   display: block;
@@ -73,7 +75,7 @@ nav.shift ul li a:after {
   height: 1px;
   content: ".";
   color: transparent;
-  background: #02bfd4;
+  background:#f7f95d;
   visibility: none;
   opacity: 0;
   z-index: -1;
@@ -83,7 +85,12 @@ nav.shift ul li a:hover:after {
   visibility: visible;
   height: 100%;
 }
-
+@media screen and (max-width:1100px){
+  nav {
+    flex-direction: column;
+  } 
+  
+}
 main {
   background-color: rgb(255, 255, 255);
   text-align: center;
@@ -92,15 +99,42 @@ main {
 h2 {
   padding: 0px;
 }
-
 section:nth-child(even) {
   background-color: rgb(241, 241, 241);
+}
+#myDiv {
+  height: auto;
+  width: auto;
+  background: 
+  url("../random image/flooring-white-space-scene-desk.jpg");
+  background-size: 1500px 995.74px ;
+  
+}
+#cake-bgimg{
+  height: auto;
+  width: auto;
+  background-image: url("../random image/colorful-background-template-gentle-classic-texture-holiday-party-events-web-internet-ads_7954-18214.jpg");
+  background-size: 1520px 995.7px;
 }
 
 section {
   min-height: 100vh;
 }
+section h2 span{
+  color: #ffffff;
+  background: rgb(2,0,36);
+  background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 3%, rgba(0,212,255,1) 100%);  padding: 10px 55px;
+  border-radius: 20px;
+  font-size: 90%;
+}
+#ownerbg{
+  height: auto;
+  width: auto;
+  background: 
+url("../random image/abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner_1258-56228.avif");
+  background-size: 1500px 995.74px ;
 
+}
 video {
   padding: 10px;
 }
@@ -121,7 +155,6 @@ footer {
   background-color: #333;
   overflow: hidden;
 }
-
 footer a {
   text-decoration: none;
   padding: 20px;
@@ -208,15 +241,14 @@ navs ul li {
   position: relative;
   width: 70px;
   cursor: pointer;
-  background: #013d60;
-  text-transform: uppercase;
+  background-image: linear-gradient(rgb(255, 255, 255), rgb(249, 118, 205));  text-transform: uppercase;
   transition: all 0.4s ease-out;
 }
 
 navs ul li:after {
   position: absolute;
   background: white;
-  background-color: #008e9d;
+  background-color: #fbff00;
   color: #032d45;
   top: 0;
   left: 70px;
@@ -282,7 +314,7 @@ navs ul li div {
   height: 0;
   border-style: solid;
   border-width: 0 17px 12px 17px;
-  border-color: transparent transparent #013d60 transparent;
+  border-color: transparent transparent rgb(179, 2, 117) transparent;
 }
 /*white triangle over red triangle*/
 .roof-edge:after {
@@ -307,7 +339,7 @@ navs ul li div {
 /*door*/
 .front:after {
   position: absolute;
-  background: #013d60;
+  background:rgb(179, 2, 117);
   width: 11px;
   height: 13px;
   bottom: 0;
@@ -341,7 +373,7 @@ navs ul li div {
   position: absolute;
   top: 10px;
   left: 5px;
-  background: #013d60;
+  background:rgb(179, 2, 117);
 }
 /*right eye*/
 .eyes:after {
@@ -351,13 +383,12 @@ navs ul li div {
   position: absolute;
   top: 0;
   left: 14px;
-  background: #013d60;
+  background:rgb(179, 2, 117);
 }
-
 .beard {
   width: 32px;
   height: 17px;
-  background: #013d60;
+  background:rgb(179, 2, 117);
   border: 2px solid white;
   position: absolute;
   bottom: 0;
@@ -372,10 +403,9 @@ navs ul li div {
   background: white;
   width: 6px;
   height: 4px;
-  border-left: 1px solid #013d60;
-  border-right: 1px solid #013d60;
+  border-left: 1px solid rgb(179, 2, 117);
+  border-right: 1px solid rgb(179, 2, 117);
 }
-
 /*//work//*/
 
 .paper {
@@ -394,7 +424,7 @@ navs ul li div {
   width: 25px;
   height: 29px;
   background: white;
-  border-top: 4px solid #013d60;
+  border-top: 4px solidrgb(179, 2, 117);
 }
 
 .lines {
@@ -402,7 +432,7 @@ navs ul li div {
   top: 36px;
   left: 5px;
   width: 11px;
-  box-shadow: 0 0 0 1px #013d60;
+  box-shadow: 0 0 0 1px rgb(179, 2, 117);
 }
 
 .lines:after {
@@ -410,7 +440,7 @@ navs ul li div {
   top: 4px;
   left: 3px;
   width: 14px;
-  box-shadow: 0 0 0 1px #013d60;
+  box-shadow: 0 0 0 1px rgb(179, 2, 117);
 }
 
 .lines:nth-child(2) {
@@ -457,7 +487,7 @@ navs ul li div {
   transform: rotate(180deg);
   border-style: solid;
   border-width: 0 16px 11px 16px;
-  border-color: transparent transparent #013d60 transparent;
+  border-color: transparent transparent rgb(179, 2, 117) transparent;
 }
 
 .mail-top:after {
