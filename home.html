@@ -32,13 +32,24 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+</link>
+<!-- Font -->
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <!-- Bootstrap Icons CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="styles/css/bootstrap.min.css" rel="stylesheet">
     <script src="styles/js/bootstrap.bundle.js"></script>
+    <style>
+      @import url('https://fonts.cdnfonts.com/css/work-sans');
+</style>
+
   </head>
   <body>
   <header>
-    <nav class="navbar navbar-expand-lg " style="background-color: #048d9c;">
+    <nav class=" navbar navbar-expand-lg navbar-dark " style="background-color: #048d9c;">
       <div class="container-fluid">
             <a class="navbar-brand" href="#">
               <img src="favicon/android-chrome-512x512.png" alt="Logo" width="65" height="65" class="d-inline-block align-text-centre">
@@ -50,7 +61,7 @@
         <div class="collapse navbar-collapse" id="navbarScroll">
           <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+              <a class="nav-link active" aria-current="page" href="home.html" >Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="NavCode/gift_items.html">Gifts</a>
@@ -82,7 +93,7 @@
           </ul>
           <form class="d-flex" role="search" >
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success "type="submit" >Search</button>
+            <button class="btn btn-outline-light " type="submit">Search</button>
           </form>
         </div>
       </div>
@@ -90,70 +101,242 @@
     </header>
     
     <main>
-      <section>
-    
-          </section>
-
-      <section>
-        <h2><span><b>Best Sellers</b></span></h2>
-        <img src="house holds/ricebran-500x500.png" alt="" />
-        <img src="house holds/81--TRakh9L._SL1500_.jpg" alt="" width="300" />
-        <img src="house holds/71iJhijc3lL._SL1500_.jpg" alt="" width="300" />
-        <img
-          src="bags and belts/backpack-02-backpack-dzire-original-imafcr74ftqrjhew.webp"
-          alt=""
-          width="400"
-        />
+        <div id="carouselExampleAutoplaying" class="carousel slide carousel-slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          </div>
+        
+          <div class="carousel-inner mb-50" >
+            
+            <div class="carousel-item container-fluid active ">
+              <div class="row ">
+                <div class="col-4 ">
+              <img src="Cakes/rose-paradise-chocolate-cake-half-kg_1.jpg" class="d-block w-300 img-fluid "  alt=""   >
+            </div>
+          <div class="col-4">
+            <img src="Cakes/assortment-pieces-cake_114579-28235.jpg " class="d-block w-300 img-fluid "   alt="" >
+          </div>
+          <div class="col-4">
+            <img src="Cakes/delicious-cake-with-fruits-cream_23-2148972058.jpg"class="d-block w-300 img-fluid "   alt=""> 
+            <div class="carousel-caption d-none d-md-block" style="color: rgb(255, 242, 0);">
+              <h5>Cakes</h5>
+              <p style=" font-size: 20px; font-weight: 400; color: rgb(249, 255, 88);" >Indulge in a slice of heaven with every bite</p>
+            </div>
+          </div></div></div>
+            <div class="carousel-item container-fluid">
+              <div class="row">
+                <div class="col-4">
+              <img src="gifts/71giiCT7MyL._SL1500_ (1).jpg" class="d-block w-300 img-fluid"   alt=""  >
+            </div>
+          <div class="col-4">
+            <img src="gifts/DSC_9835_0d30ddcc-cd48-4cbc-9603-195763d23e96_600x.jpg"class="d-block img-fluid w-300" alt="" >
+          </div>
+          <div class="col-4">
+            <img src="gifts/ts-art076-craftfry-original-imafgstggrzec2xs .jpg"class="d-block w-300 img-fluid"   alt="" >
+            <div class="carousel-caption d-none d-md-block" style="color: rgb(255, 0, 0);">
+              <h5>Gifts</h5>
+              <p style="font-size: 17px; font-weight: 500; color: rgb(255, 66, 66)">Surprise and delight with the perfect gift for any occasion</p>
+            </div>
+          </div></div></div>
+            <div class="carousel-item container-fluid">
+              <div class="row ">
+                <div class="col-4">
+              <img src="bags and belts/918LHJrDHOL._UX679_.jpg" class="d-block w-100" class="d-block w-300 img-fluid"  alt=""  >
+            </div>
+          <div class="col-4">
+            <img src="bags and belts/belt.jpg" class="d-block w-100  img-fluid "  alt="" >
+          </div>
+          <div class="col-4">
+            <img src="bags and belts/backpack-02-backpack-dzire-original-imafcr74ftqrjhew.jpg"class="d-block w-300 img-fluid"   alt="" >
+            <div class="carousel-caption d-none d-md-block " style="color: rgb(0, 0, 0);">
+              <h5>Bages and Belts</h5>
+              <p style="font-size: 17px; font-weight: 400; color: rgb(69, 69, 69)">Accessorize in style with our collection of chic bags and belts</p>
+            </div>
+          </div></div></div>
+            <div class="carousel-item container-fluid">
+              <div class="row ">
+                <div class="col-4">
+                  <img src="Bithday decors/AdobeStock_178408793-900x400.jpg"class="d-block w-300 img-fluid"   alt="" >
+                </div>
+                <div class="col-4">
+            <img src="Bithday decors/71aUYbwEBIL._SL1500_.jpg" class="d-block w-100" class="d-block w-300 img-fluid"  alt=""  >
+          </div>
+          <div class="col-4">
+            <img src="Bithday decors/81nU6clDgEL._SL1200_.jpg" class="d-block w-100  img-fluid "  alt="" >
+            <div class="carousel-caption d-none d-md-block " style="color: rgb(0, 225, 255);">
+              <h5>Decorative Items</h5>
+              <p style="font-size: 17px; font-weight: 400; color: rgb(108, 250, 255)">Elevate your event with our eye-catching decorations</p>
+            </div>
+          </div></div></div>
+         
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        
       </div>
-      </section>
-      <section>
-        <h2><span><b>Coming Soon</b></span></h2>
-        <a href="cake.html"
-          ><img
-            src="cakes/chocolate-cake-with-chocolate-sprinkles_144627-8998.avif"
-            alt=""
-            width="300"
-        /></a>
-        <a href="cake.html"
-          ><img
-            src="cakes/delicious-cake-with-fruits-cream_23-2148972058.avif"
-            alt=""
-            width="300"
-        /></a>
-        <a href="cake.html"
-          ><img src="cakes/cupcakes_74190-20.avif" alt="" width="350"
-        /></a>
-      </section>
-      <section>
-        <div id="ownerbg">
-        <br />
-        <h2><span><b>Owner</b></span></h2>
-        <img
-          class="clip"
-          src="owner and events/chotepapa.jpg"
-          alt=""
-          width="400"
-        />
-        <h3 class="profile">Anu Prakash Senapati</h3>
-         <p>
-          Owner of Senapati General Store,Karpi. Belives in Quality Products and
-          Coustomer Satisfaction. <br />
-        </p>
-        <a href="#" class="fa fa-facebook fa-lg" ></a>
-        <a href="#" class="fa fa-twitter fa-lg"> </a>
-
-        <a href="#" class="fa fa-linkedin fa-lg"> </a>
-
-        <a href="#" class="fa fa-instagram fa-lg"> </a>
-
-        <a href="#" class="fa fa-youtube fa-lg"> </a>
-
-        <a href="#" class="fa fa-snapchat-ghost fa-lg"> </a>
-        <a href="#" class="fa fa-telegram  fa-lg" style="font-size: 20px;"> </a>
-
-        <br /><br />
+      <div class="container-fluid">
+        <!-- shop overview -->
+        <div class="row">
+          <div class="col-12">
+            <h3 class=" text-center mt-5002 mb-5 " style="color: #048d9c; font-size: 20px;"> Welcome to our online shopping website, where you can find a vast range of products to meet your <br> every need. From home goods to bodyCare products,chocolates to gifts , we have everything you <br> need to make your life easier and more enjoyable.</h3>
+          </div>
+        </div>
       </div>
-      </section>
+      
+        <div class="container">
+          <div class="row">
+              <div class="col-md-3 col-sm-6">
+                  <div class="product-grid">
+                      <div class="product-image">
+                          <a href="#" class="image">
+                              <img class="pic-1" src="house holds/71iJhijc3lL._SL1500_ (1).jpg">
+                              <img class="pic-2" src="house holds/71iJhijc3lL._SL1500_ (1).jpg">
+                          </a>
+                           <span class="product-sale-label">sale!</span>
+                          <ul class="social">
+                              <li><a href="#" data-tip="Add to wishlist"><i class="fa fa-heart"></i></a></li>
+                          </ul>
+                          <div class="product-rating">
+                              <ul class="rating">
+                                  <li class="fas fa-star"></li>
+                                  <li class="fas fa-star"></li>
+                                  <li class="fas fa-star"></li>
+                                  <li class="far fa-star"></li>
+                                  <li class="far fa-star"></li>
+                              </ul>
+                              <a class="add-to-cart" href="#"> ADD TO CART </a>
+                          </div>
+                      </div>
+                      <div class="product-content">
+                          <h3 class="title"><a href="#">Men's Shirt</a></h3>
+                          <div class="price"><span>$28.00</span>$20.00</div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                  <div class="product-grid">
+                      <div class="product-image">
+                          <a href="#" class="image">
+                              <img class="pic-1" src="house holds/ricebran-500x500.jpg">
+                              <img class="pic-2" src="house holds/ricebran-500x500.jpg">
+                          </a>
+                          <ul class="social">
+                              <li><a href="#" data-tip="Add to wishlist"><i class="fa fa-heart"></i></a></li>
+                          </ul>
+                          <div class="product-rating">
+                              <ul class="rating">
+                                  <li class="fas fa-star"></li>
+                                  <li class="fas fa-star"></li>
+                                  <li class="fas fa-star"></li>
+                                  <li class="far fa-star"></li>
+                                  <li class="far fa-star"></li>
+                              </ul>
+                              <a class="add-to-cart" href="#"> ADD TO CART </a>
+                          </div>
+                      </div>
+                      <div class="product-content">
+                          <h3 class="title"><a href="#">Women's Tshirt</a></h3>
+                          <div class="price">$19.00</div>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                  <div class="product-grid">
+                      <div class="product-image">
+                          <a href="#" class="image">
+                              <img class="pic-1" src="house holds/81--TRakh9L._SL1500_ (1).jpg">
+                              <img class="pic-2" src="house holds/81--TRakh9L._SL1500_ (1).jpg">
+                          </a>
+                           <span class="product-sale-label" style="font-size: 20px;">-12%</span>
+                          <ul class="social">
+                              <li><a href="#" data-tip="Add to wishlist"><i class="fa fa-heart"></i></a></li>
+                          </ul>
+                          <div class="product-rating">
+                              <ul class="rating">
+                                  <li class="fas fa-star"></li>
+                                  <li class="fas fa-star"></li>
+                                  <li class="fas fa-star"></li>
+                                  <li class="far fa-star"></li>
+                                  <li class="far fa-star"></li>
+                              </ul>
+                              <a class="add-to-cart" href="#"> ADD TO CART </a>
+                          </div>
+                      </div>
+                      <div class="product-content">
+                          <h3 class="title"><a href="#">Men's Shirt</a></h3>
+                          <div class="price"><span>$28.00</span>$20.00</div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                <div class="product-grid">
+                    <div class="product-image">
+                        <a href="#" class="image">
+                            <img class="pic-1" src="bags and belts/backpack-02-backpack-262-336-dzire-original-imafcr74ftqrjhew.jpg">
+                            <img class="pic-2" src="bags and belts/backpack-02-backpack-262-336-dzire-original-imafcr74ftqrjhew.jpg">
+                        </a>
+                        <ul class="social">
+                            <li><a href="#" data-tip="Add to wishlist"><i class="fa fa-heart"></i></a></li>
+                        </ul>
+                        <div class="product-rating">
+                            <ul class="rating">
+                                <li class="fas fa-star"></li>
+                                <li class="fas fa-star"></li>
+                                <li class="fas fa-star"></li>
+                                <li class="far fa-star"></li>
+                                <li class="far fa-star"></li>
+                            </ul>
+                            <a class="add-to-cart" href="#"> ADD TO CART </a>
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="title"><a href="#">Women's Tshirt</a></h3>
+                        <div class="price">$19.00</div>
+                    </div>
+                </div>
+              </div>
+              </div>
+           </div>
+
+              <section>
+                <br />
+                <div id="ownerbg">
+                         <h2><span><b>Owner</b></span></h2>
+                    <img
+                      class="clip"
+                      src="owner and events/chotepapa.jpg"
+                      alt=""
+                      width="400"
+                    />
+                    <h3 class="profile">Anu Prakash Senapati</h3>
+                     <p>
+                      Owner of Senapati General Store,Karpi. Belives in Quality Products and
+                      Coustomer Satisfaction. <br />
+                    </p>
+                    <a href="#" class="fa fa-facebook fa-lg" ></a>
+                    <a href="#" class="fa fa-twitter fa-lg"> </a>
+                    <a href="#" class="fa fa-linkedin fa-lg"> </a>
+                    
+                    <a href="#" class="fa fa-instagram fa-lg"> </a>
+                    
+                    <a href="#" class="fa fa-youtube fa-lg"> </a>
+                    
+                    <a href="#" class="fa fa-snapchat-ghost fa-lg"> </a>
+                    <a href="#" class="fa fa-telegram  fa-lg" style="font-size: 20px;"> </a>
+            
+                    <br /><br />
+                  </div>
+               </section>
     </main>
     <footer>
       <a href="#">FAQs</a>
@@ -161,6 +344,5 @@
       <a href="#">ContactUs</a>
       <a href="#">&copy2023 | Senapati General Store</a>
     </footer>
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   </body>
 </html>
