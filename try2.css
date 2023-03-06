@@ -1,0 +1,154 @@
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 600px;
+  box-sizing: border-box;
+}
+.loader:before {
+  content:'';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  box-sizing: border-box;
+  animation: animate 10s linear infinite;
+}
+.loader:after {
+  content:'';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  box-sizing: border-box;
+  animation: animate 10s linear infinite ;
+  animation-delay: 10s;
+}
+
+@keyframes animate {
+  0% {
+    width: 40%;
+    height: 40%;
+    border: 60px solid #bb1111;
+    box-shadow: 0 0 10px #e7eb0a;
+  }
+25%
+{
+	width: 70%;
+	height: 70%;
+	border: 60px solid #bb1111;
+    box-shadow: 0 0 10px #e7eb0a;
+
+}
+
+50%{
+	width: 100%;
+	height: 100%;
+	border: 60px solid #bb1111;
+    box-shadow: 0 0 10px #e7eb0a;
+}
+75% {
+	width: 70%;
+	height: 70%;
+    opacity: 1;
+    border: 60px solid #bb1111;
+    box-shadow: 0 0 10px #e7eb0a;	
+
+  }
+
+  100% {
+    width: 40%;
+    height:40%;
+	border-width: 80px;
+	border: 80px solid #bb1111;
+ box-shadow: 0 0 10px #e7eb0a;	
+
+  }
+}
+
+
+
+.loader2 {
+	position: absolute;
+	top: 40%;
+	left: 40%;
+	transform: translate(-50%, -50%);
+	width: 800px;
+	height: 800px;
+	box-sizing: border-box;
+  }
+  .loader2:before {
+	content:'';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 0;
+	height: 0;
+	border-radius: 50%;
+	box-sizing: border-box;
+	animation: animate 10s linear infinite;
+  }
+  .loader2:after {
+	content:'';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	box-sizing: border-box;
+	animation: animate 10s linear infinite ;
+	animation-delay: 10s;
+  }
+  
+  @keyframes animate {
+	0% {
+	  width: 60%;
+	  height: 60%;
+	  border: 60px solid #113bbb;
+	  box-shadow: 0 0 10px #e7eb0a;
+	}
+  25%
+  {
+	  width: 70%;
+	  height: 70%;
+	  border: 60px solid #113bbb;
+	  box-shadow: 0 0 10px #e7eb0a;
+  
+  }
+  
+  50%{
+	  width: 100%;
+	  height: 100%;
+	  border: 60px solid #113bbb;
+	  box-shadow: 0 0 10px #e7eb0a;
+  }
+  75% {
+	  width: 70%;
+	  height: 70%;
+	  opacity: 1;
+	  border: 60px solid #113bbb;
+	  box-shadow: 0 0 10px #e7eb0a;	
+  
+	}
+  
+	100% {
+	  width: 40%;
+	  height:40%;
+	  border-width: 80px;
+	  border: 80px solid #113bbb;
+   box-shadow: 0 0 10px #e7eb0a;	
+  
+	}
+  }

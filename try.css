@@ -1,0 +1,57 @@
+.box-icon__shadow {
+  z-index: 0;
+  top: 32%;
+  left: 35%;
+  height: 100%;
+  width: 200%;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/6859/icon-gradient.svg) no-repeat left top;
+
+}
+.peel-item__bg__inner {
+  background: #00aeff url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/6859/dots-pattern_1.svg) left bottom;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0
+}
+
+
+.line-item {
+  background: rgba(255, 48, 165, 0.97);
+  position: absolute;
+  z-index: 1;
+  box-shadow: 2px 2px 3px rgba(0,0,0,.15)
+}
+
+.line-item--vert {
+  left: 15.6vw;
+  top: 0;
+  width: 4.8vw;
+  height: 100%;
+
+}
+
+
+
+.line-item--hor {
+  width: 100%;
+  left: 0;
+  height: 4.8vw;
+  top: 15.6vw;
+}
+
+
+.bow {
+  width: 31.2vw;
+  position: absolute;
+  left: -13vw;
+  top: 10.1vw;
+  opacity: .98;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/6859/bow.svg) no-repeat center center;
+  background-size: auto 100%
+}
+
+.bow__content {
+  padding-bottom: 58.7360595%
+}

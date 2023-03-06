@@ -870,15 +870,6 @@ svg {
   animation-iteration-count: infinite;
   fill: #4478e3;
 }
-.drop {
-  fill: transparent;
-  animation: drop 5s ease infinite normal;
-  stroke: #4478e3;
-  stroke-width: 0.5;
-  opacity: 0.6;
-  transform: translateY(80%);
-}
-
 .gooeff {
   filter: url(#goo);
 }
@@ -1240,3 +1231,7 @@ svg {
     font-size:28px;
   }
 }
+
+
+
+
