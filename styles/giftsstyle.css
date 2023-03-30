@@ -460,90 +460,12 @@ svg {
 }
 
 
-/* back to top */
-#btn-back-to-top {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  display: none;
-}
 
-/* testimoney */
-
-.testimonial {
-  border-right: 4px solid #2a3d7d;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
-  padding: 30px 30px 30px 130px;
-  margin: 0 15px 30px 15px;
-  overflow: hidden;
-  position: relative;
+html {
+  scroll-behavior: smooth;
 }
-.testimonial:before {
-  content: "";
-  position: absolute;
-  bottom: -4px;
-  left: -17px;
-  border-top: 25px solid #048d9c;
-  border-left: 25px solid transparent;
-  border-right: 25px solid transparent;
-  transform: rotate(45deg);
-}
-.testimonial:after {
-  content: "";
-  position: absolute;
-  top: -4px;
-  left: -17px;
-  border-top: 25px solid #048d9c;
-  border-left: 25px solid transparent;
-  border-right: 25px solid transparent;
-  transform: rotate(135deg);
-}
-.testimonial .pic {
+.container {
   display: inline-block;
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  overflow: hidden;
-  position: absolute;
-  top: 60px;
-  left: 20px;
-}
-.testimonial .pic img {
-  width: 100%;
-  height: auto;
-}
-.testimonial .description {
-  font-size: 15px;
-  letter-spacing: 1px;
-  color: #6f6f6f;
-  line-height: 25px;
-  margin-bottom: 15px;
-}
-.testimonial .title {
-  display: inline-block;
-  font-size: 20px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: #048d9c;
-  margin: 0;
-}
-.testimonial .post {
-  display: inline-block;
-  font-size: 17px;
-  color: #048d9c;
-  font-style: italic;
-}
-.owl-theme .owl-controls .owl-page span {
-  border: 2px solid #2a3d7d;
-  background: #fff !important;
-  border-radius: 0 !important;
-  opacity: 1;
-}
-.owl-theme .owl-controls .owl-page.active span,
-.owl-theme .owl-controls .owl-page:hover span {
-  background: #048d9c !important;
-  border-color: #048d9c;
 }
 @media only screen and (max-width: 767px) {
   .testimonial {
@@ -558,6 +480,13 @@ svg {
 }
 
 .title {
+  font-size: 20px;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+.greet {
+  font-family: "Montserrat Medium";
+  color: rgb(129, 1, 1);
   font-size: 20px;
 }
 
@@ -653,78 +582,7 @@ svg {
   }
  
 
-  /* body background */
- 
-    .z1{
-      z-index: 0;
-    }
-    .z2{
-      z-index: 4;
-    }
-    .z3{
-      z-index: 50;
-    }
-
-  .peel-item__bg__inner {
-    background: #00aeff url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/6859/dots-pattern_1.svg) ;
-    position: absolute;
-    width: 100%;
-    height: 120vw;
-    top: 0;
-    left: 0
-  }
-  
-  
-  .line-item {
-    background: rgba(255, 48, 165, 0.97);
-    position: absolute;
-    z-index: 3;
-    box-shadow: 2px 2px 3px rgba(0,0,0,.15)
-  }
-  
-  .line-item--vert {
-    left: 9vw;
-    top: 0;
-    width: 3.8vw;
-    height: 210vh;
-  
-  }
-  
-  
-  
-  .line-item--hor {
-    width: 100%;
-    left: 0;
-    height: 3.8vw;
-    top: 17vw;
-  }
-
-   .bow {
-    width: 28vw;
-    position: absolute;
-    left: -11.5vw;
-    top: 12vw;
-    opacity: .98;
-    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/6859/bow.svg) no-repeat center center;
-    background-size: auto 100%
-  }
-  
-  .bow__content {
-    padding-bottom: 58.7360595%
-  }
- 
-  
-  #boxp{
-    margin-left: 395px;
-    margin-top: 80px;
-  }
-  
-  #boxh{
-    margin-left: 395px;
-    margin-top: 150px; 
-  }
-
-  @media screen and (max-width:520px)
+@media screen and  (max-width:520px)
 {
   .z1{
     z-index: 0;
@@ -740,7 +598,7 @@ svg {
     background: #00aeff url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/6859/dots-pattern_1.svg) ;
     position: absolute;
     width: 100%;
-    height: 200vh;
+    height: 100vh;
     top: 0;
     left: 0
   }
@@ -767,14 +625,14 @@ svg {
     width: 100%;
     left: 0;
     height: 3.8vw;
-    top: 37vw;
+    top: 45vw;
   }
 
    .bow {
     width: 28vw;
     position: absolute;
     left: -11.5vw;
-    top: 32vw;
+    top: 40vw;
     opacity: .98;
     background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/6859/bow.svg) no-repeat center center;
     background-size: auto 100%;
@@ -792,20 +650,12 @@ svg {
     margin-top: 10px;
   }
  
-  .peel-item__bg__inner {
-    background: #00aeff url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/6859/dots-pattern_1.svg) ;
-    position: absolute;
-    width: 100%;
-    height: 125vh;
-    top: 0;
-    left: 0
-  }
   
   .line-item--vert {
     left: 9vw;
     top: 0;
     width: 3.8vw;
-    height: 118vh;
+    height: 100vh;
   }
 }
 
@@ -814,4 +664,107 @@ svg {
   font-size: 35px;
    text-align:center ;
 }
+ 
+main{
+ text-align: center; 
+} 
 
+#topmar{
+margin-top: 650px;}
+
+.zin{
+  z-index: 70;
+}
+@font-face {
+  font-family: 'Gladious';
+  src: url(../fonts/Gladiolus\ Script\ DEMO.ttf);
+}
+
+.startmesg{
+  color: rgb(157, 0, 0,1);
+   font-size: 90px; 
+   font-family:Gladious;
+   
+   margin-top: 47vw;
+   font-weight: 580;
+   margin-left: 130vw;
+   -webkit-text-stroke-color: #d70142;
+   -webkit-text-stroke-width: 0.5px;
+   margin-left: 15vw;
+}
+@media screen and (min-width:520px)
+{
+/* body background */
+
+  .z1{
+    z-index: 0;
+  }
+  .z2{
+    z-index: 4;
+  }
+  .z3{
+    z-index: 50;
+  }
+  
+
+.peel-item__bg__inner {
+  background: #00aeff url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/6859/dots-pattern_1.svg) ;
+  position: absolute;
+  width: 100%;
+  height: 52vw;
+  top: 0;
+  left: 0;
+}
+
+
+.line-item {
+  background: rgba(255, 48, 165, 0.97);
+  position: absolute;
+  z-index: 3;
+  box-shadow: 2px 2px 3px rgba(0,0,0,.15);
+}
+
+.line-item--vert {
+  left: 15vw;
+  top: 0;
+  width: 3.8vw;
+  height: 100.3vh;
+
+}
+
+.line-item--hor {
+  width: 100%;
+  left: 0;
+  height: 3.8vw;
+  top: 25vw;
+}
+
+
+ .bow {
+  width: 28vw;
+  position: absolute;
+  left: -11.5vw;
+  top: 20vw;
+  opacity: .98;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/6859/bow.svg) no-repeat center center;
+  background-size: auto 100%
+}
+
+.bow__content {
+  padding-bottom: 58.7360595%
+}
+.startmesg{
+  color: rgb(157, 0, 0);
+   font-size: 170px ;
+   font-family:Gladious;
+   
+   margin-top: 12vw;
+   font-weight: 580;
+   -webkit-text-stroke-color: #ff004c;
+   -webkit-text-stroke-width: 0.5px;
+   margin-left: 140px;
+}
+.margin{
+  margin-top: 20vw;
+}
+}
