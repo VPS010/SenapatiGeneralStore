@@ -625,14 +625,14 @@ html {
     width: 100%;
     left: 0;
     height: 3.8vw;
-    top: 45vw;
+    top: 40vw;
   }
 
    .bow {
     width: 28vw;
     position: absolute;
     left: -11.5vw;
-    top: 40vw;
+    top: 35vw;
     opacity: .98;
     background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/6859/bow.svg) no-repeat center center;
     background-size: auto 100%;
@@ -689,7 +689,7 @@ margin-top: 650px;}
    font-size: 90px; 
    font-family:Gladious;
    
-   margin-top: 47vw;
+   margin-top: 40vw;
    font-weight: 580;
    margin-left: 130vw;
    -webkit-text-stroke-color: #d70142;
